@@ -14,7 +14,7 @@ def Enquiry(lis1):
         return 1
 
 def index(request):
-    return HttpResponse("Hello ")
+    return render(request,"bchain/admin_option.html")
 
 
 def get_data(request):
