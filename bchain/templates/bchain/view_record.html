@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <h1>Records</h1>
+  <table border="2" width="600" bgcolor="beige" >
+  <tr>
+  <td>Amount</td>
+  <td>Location</td>
+  <td>Buyer</td>
+  <td>Seller</td>
+  <td>Previous hash</td>
+  <td>Hash</td>
+  </tr>
+  {% for i in z %}
+      <tr>
+      <td>{{i.amount}}</td>
+      <td>{{i.location}}</td>
+      <td>{{i.buyer}}</td>
+      <td>{{i.seller}}</td>>
+      <td>{{i.prev_hash}}</td>
+      <td>{{i.hash}}</td>
+
+      </tr>
+     {% endfor %}
+  </table>
+</body>
+</html>

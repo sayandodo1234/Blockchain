@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% csrf_token %}
+Thank you<br>
+If Wish to add more<br>
+<form action=http://127.0.0.1:8000/bchain/getdata/>
+ <input type="submit" value="Click to add record">
+</form>
+Wish to view the blockchain<br>
+<form action="http://127.0.0.1:8000/bchain/viewdata/">
+    <input type="submit" value="Click to view">
+</form>
+</body>
+</html>
