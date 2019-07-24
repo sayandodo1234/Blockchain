@@ -2,18 +2,30 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Operation</title>
 </head>
 <body>
 {% csrf_token %}
-<h3>Choose the  appropiate option</h3>
+<h2>Choose the  appropiate option</h2>
+<br>
 Add record<br>
-<form action=http://127.0.0.1:8000/bchain/getdata/>
+<form action="{% url 'getdata' %}">
  <input type="submit" value="Click to add record">
 </form>
+<br>
 View the blockchain<br>
-<form action="http://127.0.0.1:8000/bchain/viewdata/">
+<form action="{% url 'viewdata' %}">
     <input type="submit" value="Click to view">
+</form>
+<br>
+Add nodes<br>
+<form action="{% url 'node' %}">
+    <input type="submit" value="Click to add nodes">
+</form>
+<br>
+View nodes<br>
+<form action="{%url 'shownode' %}">
+    <input type="submit" value="Click to view the nodes">
 </form>
 </body>
 </html>

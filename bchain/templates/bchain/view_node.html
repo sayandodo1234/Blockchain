@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>node list</title>
+</head>
+<body>
+<h1>Nodes</h1>
+<table border="2" width="600" bgcolor="beige" >
+  {% for i in k %}
+      <tr>
+      <td>{{i.url}}</td>
+
+
+      </tr>
+     {% endfor %}
+
+</table>
+<form action="{% url 'index' %}">
+    <input type="submit" value="Click to go to main menu ">
+</form>
+</body>
+</html>

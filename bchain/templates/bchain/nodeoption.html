@@ -7,18 +7,17 @@
 <body>
 {% csrf_token %}
 <h4>Thank you</h4>
-<h5>Block is announced to the peers</h5>
-If Wish to add more<br>
-<form action="{% url 'getdata' %}">
- <input type="submit" value="Click to add record">
+If Wish to add more nodes<br>
+<form action="{% url 'node' %}">
+    <input type="submit" value="Click to add nodes">
 </form>
 Wish to view the blockchain<br>
 <form action="{% url 'viewdata' %}">
     <input type="submit" value="Click to view">
 </form>
-Wish to add new nodes in the system<br>
-<form action="{% url 'node' %}">
-    <input type="submit" value="Click to add nodes">
+Wish to add new record in the system<br>
+<form action="{% url 'getdata' %}">
+ <input type="submit" value="Click to add record">
 </form>
 Wish to view nodes<br>
 <form action="{%url 'shownode' %}">
