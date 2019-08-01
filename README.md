@@ -40,6 +40,6 @@ For instance, if we are in the node  127.0.0.1:8000
  3. By clicking on "Click to add nodes" we are redirected to the following page
  <img src="bchain/images/node addition.PNG">
  
- 4. Add the node url of other peers excluding the present node address.(In this case add 127.0.0.1:5000 and 127.0.0.1:4000  excluding 127.0.0.1:8000)
+ 4. Add the node url of other peers excluding the present node address.(In this case add 127.0.0.1:5000 and 127.0.0.1:4000 and exclude 127.0.0.1:8000)
  
  The same process is repeated for 127.0.0.1:5000 and 127.0.0.1:4000
