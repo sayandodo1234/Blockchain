@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!-- stats.js lib --> <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!-- stats.js lib -->
+    <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+    <script src="https://kit.fontawesome.com/7f137e5abe.js"></script>
     <meta charset="UTF-8">
     <title>Node</title>
 
@@ -41,6 +43,10 @@
  font-size: 20px;
  font-color:white;
  }
+ .in{
+ font-color:black
+ }
+
 
 body{
     background: cornflowerblue;
@@ -55,9 +61,9 @@ body{
      <form method="post">
     {% csrf_token %}
          <h2><font color="orange"> Add URL</font></h2>
-         <div class="label">
-             <p> Node URL:{{ form.url }}</p>
-    </div>
+         <div class="label">Node URL:</div><div class="in">{{ form.url }} </div>
+         <br>
+
          <button class="btn btn-success btn-lg button"><i class="fas fa-database"></i> Click to  add node</button>
 
 </form>
