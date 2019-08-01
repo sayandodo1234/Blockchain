@@ -12,7 +12,4 @@
 3. Change the port number in node.url  in the "5000"   and "4000" folder to 5000 and 4000 respectively.For instance-
 <img src="bchain/images/announce_block5000.PNG">
 4. Run the terminal for each of the folders 
- For 8000
-```
-Give the example
-```
+> For 8000
