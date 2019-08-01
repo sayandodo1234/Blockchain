@@ -99,7 +99,7 @@ def announce_block(block):
     state = st['_state']
     del st['_state']
     for node in nodes:
-        if node.url != '127.0.0.1:8000':
+        if node.url != '127.0.0.1:5000':
             URL = "http://{}/bchain/receiveblock/".format(node.url)
             r = requests.post(url=URL, data=json.dumps(st, sort_keys=True))
 
