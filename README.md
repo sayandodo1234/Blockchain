@@ -3,7 +3,7 @@
  2. In the folder create three folders "5000","8000" and "4000".
  3. Now copy the project on each of these folders.
  
- 
+
 
 ##  How to run it:
 1. Go to  views.py of bchain app in the blockchain project   for each folder 
@@ -11,5 +11,20 @@
 <img src="bchain/images/announce_block.PNG">
 3. Change the port number in node.url  in the "5000"   and "4000" folder to 5000 and 4000 respectively.For instance-
 <img src="bchain/images/announce_block5000.PNG">
-4. Run the terminal for each of the folders 
-> For 8000
+ 4. Go to the  terminal for each of the folder and type the following commands
+ For 8000 terminal type the command
+     
+     py manage.py runserver 8000
+ 
+  Similarly for 5000
+     
+     py manage.py runserver 5000
+     
+  and for 4000   
+     
+     py manage.py runserver 4000
+    
+     
+     
+     
+     
