@@ -11,7 +11,8 @@
 <img src="bchain/images/announce_block.PNG">
 3. Change the port number in node.url  in the "5000"   and "4000" folder to 5000 and 4000 respectively.For instance-
 <img src="bchain/images/announce_block5000.PNG">
- 4. Go to the  terminal for each of the folder and type the following commands
+ 4. Go to the  terminal for each of the folder .
+ 
  For 8000 terminal type the command
      
      py manage.py runserver 8000
