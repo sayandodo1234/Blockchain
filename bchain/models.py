@@ -6,7 +6,6 @@ from django.contrib import admin
 # Create your models here.
 
 class Block(models.Model):
-    #blockchain = models.ForeignKey(Blockchain, on_delete=models.CASCADE)
     amount = models.CharField(max_length=100,editable=False)
     location = models.CharField(max_length=100,editable=False)
     buyer = models.CharField(max_length=100,editable=False)
@@ -20,8 +19,6 @@ class Block(models.Model):
 
 
 class Blockchain(models.Model):
-    #id = models.IntegerField(default=0,primary_key=True)
-    #block = models.ForeignKey(Block,on_delete=models.CASCADE)
     amount = models.CharField(max_length=100,default=None,editable=False)
     location = models.CharField(max_length=100,default=None,editable=False)
     buyer = models.CharField(max_length=100,default=None,editable=False)

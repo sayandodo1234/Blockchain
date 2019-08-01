@@ -41,24 +41,18 @@ body{
 <div style="position: absolute;
     top: 28%;
     left: 40%;">
-<!--'https://data.whicdn.com/images/299321080/original.gif'-->
-<!--<div id="example1  " style="background : url('https://static.dezeen.com/uploads/2019/03/black-house-buero-wagner-munich-germany-sq_f-411x411.jpg');-->
-<!--background-size: contain;-->
-<!--padding: 213px;">-->
 {% csrf_token %}
     <h2><font color="white">Choose the  appropiate option</font></h2>
 <br>
-<!--<font color="orange">Add record</font><br>-->
 <form action="{% url 'getdata' %}">
     <button class="btn btn-success btn-lg button"><i class="fas fa-plus"></i> Click to add record</button>
- <!--<input type="submit" value="Click to add record" class="btn btn-success btn-lg">-->
+
 </form>
 <br>
-<!--<font color="orange">View the blockchain</font><br>-->
 <form action="{% url 'viewdata' %}">
     <button class="btn btn-success btn-lg button"><i class="far fa-eye"></i> Click to view the blockchain</button>
 
-   <!-- <button type="button" class="btn btn-primary">Primary</button><button type="button" class="btn btn-primary">Primary</button>-->
+
 </form>
 <br>
 <form action="{% url 'node' %}">
