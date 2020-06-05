@@ -22,7 +22,7 @@ cycler==0.10.0
 daphne==2.3.0
 defusedxml==0.6.0
 diff-match-patch==20181111
-Django==2.2.2
+Django==2.2.13
 django-channels==0.7.0
 django-import-export==1.2.0
 djangorestframework==3.9.4
